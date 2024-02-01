@@ -75,3 +75,7 @@ In this project, we explore a classic encryption technique known as the Caesar C
 - `caesar_cipher/is_english.py`: Provides functions for checking English word validity.
 - `tests/test_caesar.py`: Includes test cases for the implemented functions.
 
+### Special Thanks
+
+I'd like to extend a special thanks to @ekowyawson and @LatherioK0818 for their contributions to this project.
+
