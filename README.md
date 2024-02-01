@@ -77,5 +77,5 @@ In this project, we explore a classic encryption technique known as the Caesar C
 
 ### Special Thanks
 
-I'd like to extend a special thanks to @ekowyawson, @ariley215, and @LatherioK0818 for their contributions to this project.
+I'd like to extend a special thanks to `@ekowyawson`, `@ariley215`, and `@LatherioK0818` for their contributions to this project.
 
