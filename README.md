@@ -20,6 +20,10 @@ In this project, we explore a classic encryption technique known as the Caesar C
 
 - [Caesar Cipher](https://en.wikipedia.org/wiki/Caesar_cipher)
 
+- [NLTK Documentation](https://www.nltk.org/)
+
+- [NLTK Corpus](https://www.nltk.org/nltk_data/)
+
 ### Virtual Environment Setup
 
 1. Create a virtual environment: `python -m venv venv`
@@ -27,7 +31,6 @@ In this project, we explore a classic encryption technique known as the Caesar C
    - On Windows: `.\venv\Scripts\activate`
    - On macOS/Linux: `source venv/bin/activate`
 3. Install dependencies: `pip install -r requirements.txt`
-4. Install requests library: `pip install requests`
 
 
 ### How to Run
@@ -69,4 +72,6 @@ In this project, we explore a classic encryption technique known as the Caesar C
 
 - `caesar_cipher/cipher.py`: Contains the main implementation of the Caesar Cipher.
 - `caesar_cipher/corpus.py`: Manages the English words corpus for cracking functionality.
+- `caesar_cipher/is_english.py`: Provides functions for checking English word validity.
 - `tests/test_caesar.py`: Includes test cases for the implemented functions.
+

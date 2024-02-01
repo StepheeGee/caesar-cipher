@@ -1,5 +1,6 @@
 # cipher.py
-from caesar_cipher.corpus import english_words_set, english_names_set
+from caesar_cipher.corpus import english_words_set
+from caesar_cipher.is_english import count_words
 import re, os, sys
 import nltk
 from nltk.corpus import words, names
@@ -30,7 +31,9 @@ def decrypt(encrypted_text, shift):
 def calculate_word_validity_ratio(decrypted_text, english_words_set):
     words = decrypted_text.split()
     valid_words = sum(word.lower() in english_words_set for word in words)
-    return valid_words / len(words)
+    ratio = (valid_words / len(words)) * 100
+    return min(ratio, 100.0)
+
 
 def crack(encrypted_text, english_words=english_words_set):
     for shift in range(26):
@@ -49,4 +52,3 @@ if __name__ == "__main__":
     print("Encrypt:", encrypt("What the hell is going on?", 6))
     print("Decrypt:", decrypt("Cngz znk nkrr oy muotm ut?", 6))
     print("Crack:", crack("Cngz znk nkrr oy muotm ut?"))
-
