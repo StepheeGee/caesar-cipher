@@ -1,6 +1,6 @@
 #is_english.py
 
-from .corpus import english_words_set
+from caesar_cipher.corpus import english_words_set
 import re
 
 def count_words(text):
